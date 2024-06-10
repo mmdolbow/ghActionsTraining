@@ -19,7 +19,7 @@ jobs:
         id: test-action
         uses: mmdolbow/gh-test-js-action@main
         with:
-          milleseconds: 2000
+          milliseconds: 2000
           message: 'Positive Mental Attitude'
 
       - name: Mike Print Output
