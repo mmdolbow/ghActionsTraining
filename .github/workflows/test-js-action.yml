@@ -15,7 +15,7 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Mike Test Local Action
+      - name: Mike Test Action in the JS Repo
         id: test-action
         uses: mmdolbow/gh-test-js-action@main
 
