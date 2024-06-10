@@ -7,14 +7,20 @@ on:
 
 jobs:
   test-action:
-    runs-on: node16
+    name: Mike GitHub Actions Test
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v.3.3.0
-      
-      - name: Run my JS action
-        id: hello-action
-        uses: mmdolbow/gh-test-js-action@main
+        id: checkout
+        uses: actions/checkout@v4
 
-      - name: Output time set in the script
-        run: echo "The time was set"
+      - name: Mike Test Local Action
+        id: test-action
+        uses: mmdolbow/gh-test-js-action@main
+        with:
+          milliseconds: 1000
+
+      - name: Mike Print Output
+        id: output
+        run: echo "${{ steps.test-action.outputs.time }}"
