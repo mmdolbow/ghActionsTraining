@@ -1,4 +1,4 @@
-name: Test Fun JS Actions
+name: Test Super Exciting JS Actions
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-action:
-    name: Mike GitHub Actions Test
+    name: Pedestrian GitHub Actions Test
     runs-on: ubuntu-latest
 
     steps:
