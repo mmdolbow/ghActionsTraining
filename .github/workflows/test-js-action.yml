@@ -18,7 +18,12 @@ jobs:
       - name: Mike Test Action in the JS Repo
         id: test-action
         uses: mmdolbow/gh-test-js-action@main
+        with:
+          milleseconds: 2000
+          message: 'Positive Mental Attitude'
 
       - name: Mike Print Output
         id: output
-        run: echo "${{ steps.test-action.outputs.time }}"
+        run: 
+          echo "${{ steps.test-action.outputs.time }}"
+          echo "${{ steps.test-action.outputs.outmessage }}"
