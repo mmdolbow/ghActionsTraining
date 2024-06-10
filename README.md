@@ -66,7 +66,7 @@ For this workshop you need the following:
 - It is recommended to have a second screen for the hand-on labs
 
 - Test modifications:
-- triggers build
+- triggers build. Wait this time we'll do it through a PR
 
 ## Cheat Sheet
 Find common terminology for reference [here](./CheatSheet.md)
