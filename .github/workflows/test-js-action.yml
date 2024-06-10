@@ -18,8 +18,6 @@ jobs:
       - name: Mike Test Local Action
         id: test-action
         uses: mmdolbow/gh-test-js-action@main
-        with:
-          milliseconds: 1000
 
       - name: Mike Print Output
         id: output
