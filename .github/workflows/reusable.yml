@@ -1,1 +1,16 @@
 name: Reusable Workflow
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:
+				description: 'Homey to greet'
+				type: string
+				required: true
+				default: Terra
+
+jobs:
+	reusable-job:
+ 		runs-on: ubuntu-latest
+		steps:
+			-name: Greet my homey	
+	 			run: echo "Hello"
